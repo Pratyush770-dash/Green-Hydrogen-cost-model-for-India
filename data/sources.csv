@@ -1,0 +1,16 @@
+parameter,value,unit,source,url,status
+capex_per_kw,65000,INR/kW,IMARC Engineering: alkaline electrolyser USD 500-1000/kW; midpoint 750 x INR 87/USD,https://www.imarcengineering.com/blog/how-to-set-up-a-green-hydrogen-production-plant-in-india,CITED (secondary)
+tariff,3.25,INR/kWh,IMARC: solar bids INR 2.5-3.5 and wind INR 3-4/kWh; hybrid midpoint,https://www.imarcengineering.com/blog/how-to-set-up-a-green-hydrogen-production-plant-in-india,CITED (midpoint is mine)
+capacity_factor,0.45,fraction,Assumption: solar+wind hybrid without storage; CSEP finds >60% optimal with ~2x RE overbuild (2030),https://csep.org/technical-note/benchmarking-green-hydrogen-in-indias-energy-transition-expensive-but-important-for-some-uses/,ASSUMPTION
+efficiency_lhv,0.62,fraction,Calibrated so SEC ~56.6 kWh/kg incl. degradation; SIGHT electrolyser tender caps SEC at 56 kWh/kg (IEEFA Mar 2024),https://ieefa.org/resources/indias-21bn-leap-towards-its-green-hydrogen-vision,CALIBRATED
+discount_rate,0.10,fraction,No cited source found - treat as assumption; sensitivity covers it,,ASSUMPTION
+life_years,20,years,Assumption,,ASSUMPTION
+om_frac,0.025,fraction of capex/yr,Assumption,,ASSUMPTION
+stack_cost_frac,0.30,fraction of capex,Assumption,,ASSUMPTION
+stack_life_h,70000,hours,Assumption,,ASSUMPTION
+water_cost_per_kg,1.0,INR/kg,Assumption (~9 kg water per kg H2),,ASSUMPTION
+scenario_2030_capex,43500,INR/kW,USD 500/kW (low end of IMARC alkaline range) x 87,https://www.imarcengineering.com/blog/how-to-set-up-a-green-hydrogen-production-plant-in-india,CITED (scenario)
+scenario_2030_tariff,2.5,INR/kWh,Low end of IMARC solar bids; CRISIL says RE must fall below INR 2 for parity,https://www.crisilratings.com/en/home/newsroom/press-releases/2023/03/cost-reduction-critical-for-spirited-adoption-of-green-hydrogen.html,CITED (scenario)
+scenario_2030_cf,0.60,fraction,CSEP: >60% electrolyser CUF optimal,https://csep.org/technical-note/benchmarking-green-hydrogen-in-indias-energy-transition-expensive-but-important-for-some-uses/,CITED (scenario)
+scenario_optimistic_capex,30450,INR/kW,CEEW bottom-up India manufacturing cost USD 350-400/kW (lower bound; equipment only) x 87,https://www.ceew.in/node/4036,CITED (lower bound)
+scenario_optimistic_tariff,2.0,INR/kWh,CRISIL: RE must fall below INR 2/kWh,https://www.crisilratings.com/en/home/newsroom/press-releases/2023/03/cost-reduction-critical-for-spirited-adoption-of-green-hydrogen.html,CITED (threshold)
